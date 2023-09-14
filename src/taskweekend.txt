@@ -1,0 +1,4 @@
+-  BASE: rifare l'app di Reddit per un singolo subreddit
+- BASE: ogni card del post deve avere un tastino per cancellarlo
+- BASE: avere un menù a tendina che mi faccia scegliere tra hot, top e new e cambi la chiamata
+- BONUS: avere un tastino per ogni post che mi permetta di flaggare il post come preferito e avere una pagina apposita per vedere i preferiti
