@@ -10,6 +10,8 @@ export class DataService {
   postsArray: Post[] = [];
 
   constructor(private connServ: ConnectionService) {
+
+
     this.connServ.getPosts().then(posts => {
       console.log(posts)
       // this.postsArray.push(...posts);

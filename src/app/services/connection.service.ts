@@ -15,5 +15,6 @@ export class ConnectionService {
     .then(data => data.children)
     .then(children => children.map((c:any) => c.data))
 
+
   }
 }

@@ -2,7 +2,7 @@ export interface Post {
   id: string,
   title: string,
   author: string,
-  created: number,
+  created: Date,
   thumbnail: string,
   url: string,
 }
