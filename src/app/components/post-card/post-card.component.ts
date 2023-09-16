@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Post } from 'src/app/model/post';
 
 @Component({
   selector: 'app-post-card',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./post-card.component.scss']
 })
 export class PostCardComponent {
-
+// postsData: any;
+// post: any;
+@Input() postsData: Post | undefined;
 }

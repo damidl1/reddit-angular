@@ -6,6 +6,9 @@ import { ConnectionService } from './connection.service';
   providedIn: 'root'
 })
 export class DataService {
+  getPosts() {
+    throw new Error('Method not implemented.');
+  }
 
   postsArray: Post[] = [];
 
@@ -14,7 +17,10 @@ export class DataService {
 
     this.connServ.getPosts().then(posts => {
       console.log(posts)
-      // this.postsArray.push(...posts);
+      if (posts) {
+        this.postsArray.push(...posts);
+      }
+
 
     })
   }
