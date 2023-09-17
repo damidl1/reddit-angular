@@ -10,4 +10,16 @@ export class PostCardComponent {
 // postsData: any;
 // post: any;
 @Input() postsData: Post | undefined;
+@Input() postsArray: Post[] | undefined;
+
+
+deletePost(){
+  if (this.postsData && this.postsArray) {
+    const indexToRemove = this.postsArray.indexOf(this.postsData);
+
+    if (indexToRemove !== -1) {
+      this.postsArray.splice(indexToRemove, 1);
+    }
+  }
+ }
 }

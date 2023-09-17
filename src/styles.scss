@@ -2,32 +2,33 @@
 // @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100;0,400;0,600;1,100;1,400;1,500&display=swap');
 
 
-// html,body{
-//     margin: 0;
-//     padding: 0;
-// }
-// app-main{
-//     display: flex;
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: #0f1a1c;
+}
+app-main{
+    display: flex;
 
-//    flex-wrap: wrap;
-//    justify-content: center;
+   flex-wrap: wrap;
+   justify-content: center;
 
-// }
-
-
-
-// app-student-card{
+}
 
 
-//     display: flex;
-//     flex-direction: column;
-//   margin: 50px;
-//     justify-content: center;
+
+app-post-card{
 
 
-// }
+    display: flex;
+    flex-direction: column;
+  margin: 50px;
+    justify-content: center;
 
-// app-footer{
-//     margin: 0;
 
-// }
+}
+
+app-footer{
+    margin: 0;
+
+}

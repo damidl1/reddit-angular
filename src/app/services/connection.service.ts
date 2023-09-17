@@ -8,6 +8,7 @@ export class ConnectionService {
 
   constructor() { }
 
+
   getPosts():Promise<void | Post[]>{
      return fetch('https://www.reddit.com/r/italy/new.json')
     .then(resp => resp.json())
@@ -23,7 +24,7 @@ export class ConnectionService {
         url: c.data.url
       }
       return newPost;
-    }))
+    }));
 
 
   }

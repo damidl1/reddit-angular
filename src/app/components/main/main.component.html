@@ -1,17 +1,7 @@
 <app-header></app-header>
+
 <div class="card-container">
-  <app-post-card *ngFor="let post of postsData" [postsData]="post"></app-post-card>
+  <app-post-card *ngFor="let post of postsData" [postsData]="post" [postsArray]="postsData"></app-post-card>
 </div>
+
 <app-footer></app-footer>
-<!-- <app-main></app-main>
-<app-footer></app-footer> -->
-
-<!-- <div *ngFor="let post of postsData" class="posts-card">
-
-  <div class="card-content">
-    <img src="{{post.thumbnail}}" alt="">
-    <p>{{post.title}}</p>
-    <p>{{post.author}}</p>
-    <p>{{post.created}}</p>
-  <app-post-card [postsData]="post"></app-post-card>
-</div> -->
