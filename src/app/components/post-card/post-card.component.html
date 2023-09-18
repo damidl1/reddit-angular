@@ -1,10 +1,17 @@
 <div *ngIf="postsData" class="card">
-  <img src="{{postsData.thumbnail}}" alt="">
+  <img src="{{postsData.url}}" alt="">
   <div class="card-content">
-    <h4>{{postsData.id}}</h4>
-    <h4>{{postsData.title}}</h4>
-    <h4>{{postsData.author}}</h4>
-    <h4>{{postsData.created}}</h4>
-    <h4>{{postsData.url}}</h4>
-    <button (click)="deletePost()">Elimina</button>
+    <div class="title-card">
+      <h4>{{postsData.title}}</h4>
+      <h4>{{postsData.author}}</h4>
+    </div>
+    <div class="detail-card">
+      <h4>{{postsData.created}}</h4>
+      <h4>{{postsData.url}}</h4>
+    </div>
+
+    <div class="btn-container">
+      <button class="delete-btn" (click)="deletePost()">Elimina</button>
+    </div>
+
   </div>
